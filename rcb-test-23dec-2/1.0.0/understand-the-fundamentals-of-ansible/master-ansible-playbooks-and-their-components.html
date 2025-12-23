@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Master Ansible playbooks and their components :: Ansible Basics Course Outline</title>
+    <link rel="prev" href="learn-to-install-and-configure-ansible.html">
+    <link rel="next" href="../appendix/appendix.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Ansible Basics Course Outline</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-23dec-2" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Ansible Basics Course Outline</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="understand-the-fundamentals-of-ansible.html">Understand the fundamentals of Ansible</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="learn-to-install-and-configure-ansible.html">Learn to install and configure Ansible</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="master-ansible-playbooks-and-their-components.html">Master Ansible playbooks and their components</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Ansible Basics Course Outline</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Ansible Basics Course Outline</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Ansible Basics Course Outline</a></li>
+    <li><a href="understand-the-fundamentals-of-ansible.html">Understand the fundamentals of Ansible</a></li>
+    <li><a href="master-ansible-playbooks-and-their-components.html">Master Ansible playbooks and their components</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Master Ansible playbooks and their components</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">= Master Ansible Playbooks and Their Components
+
+Ansible playbooks are the heart of Ansible automation. They define the desired state of a system or a set of systems, and Ansible ensures that the system(s) comply with this state. This section will guide you through the fundamentals of Ansible playbooks and their components.
+
+== Understanding Playbooks
+
+Ansible playbooks are written in YAML, a human-readable data serialization format. They consist of a series of plays, where each play targets one or more hosts to configure them according to the playbook's instructions.
+
+== Playbook Components
+
+A playbook is composed of several key components:
+
+1. **Hosts**: The systems you want to configure. Hosts can be defined in the playbook itself or in an inventory file.
+
+2. **Plays**: A play is a section of the playbook that describes a set of actions to be executed on a set of hosts. A play includes the following components:
+
+   - **Tasks**: The individual actions to be performed on the targeted hosts. Tasks are defined using modules, which are reusable pieces of code that perform specific operations.
+
+   - **Role**: A role is a way to organize playbooks and related files into logical, reusable units. Roles promote the reuse of code and help to keep playbooks DRY (Don't Repeat Yourself).
+
+3. **Variables**: Used to store values that can be reused throughout the playbook. Variables can be defined at the play, host, group, or role level.
+
+4. **Templates**: Files that contain variables, which are then rendered into configuration files when the playbook is executed.
+
+5. **Handlers**: Specialized types of tasks that are triggered by notifies or listen in tasks. They are used for actions that require a response, such as restarting a service when a file has changed.
+
+6. **Facts**: Information gathered about the remote systems, such as operating system details, network interfaces, and more. Facts can be used in playbooks to make decisions based on the actual state of the system.
+
+== Hands-on Activity: Creating a Simple Playbook
+
+Let's create a simple playbook to install the Apache web server on a set of target hosts.
+
+1. Create a new file named `apache_install.yml` and open it in your favorite text editor.
+
+2. Add the</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="learn-to-install-and-configure-ansible.html">Learn to install and configure Ansible</a></span>
+  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn to install and configure Ansible :: Ansible Basics Course Outline</title>
+    <link rel="prev" href="understand-the-fundamentals-of-ansible.html">
+    <link rel="next" href="master-ansible-playbooks-and-their-components.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Ansible Basics Course Outline</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-23dec-2" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Ansible Basics Course Outline</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="understand-the-fundamentals-of-ansible.html">Understand the fundamentals of Ansible</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="learn-to-install-and-configure-ansible.html">Learn to install and configure Ansible</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="master-ansible-playbooks-and-their-components.html">Master Ansible playbooks and their components</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Ansible Basics Course Outline</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Ansible Basics Course Outline</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Ansible Basics Course Outline</a></li>
+    <li><a href="understand-the-fundamentals-of-ansible.html">Understand the fundamentals of Ansible</a></li>
+    <li><a href="learn-to-install-and-configure-ansible.html">Learn to install and configure Ansible</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Learn to install and configure Ansible</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">= Learn to Install and Configure Ansible
+
+== Prerequisites
+
+Before diving into the installation and configuration of Ansible, ensure you have the following prerequisites in place:
+
+1. A system running a supported operating system (e.g., Linux, macOS, or Windows with WSL).
+2. Basic understanding of command-line interfaces.
+3. A text editor for creating Ansible playbooks (e.g., vim, nano, or Visual Studio Code).
+
+== Installation
+
+Ansible can be installed on various platforms using different methods. Here, we'll cover the installation process for Linux, macOS, and Windows (using WSL).
+
+=== Linux
+
+For most Linux distributions, Ansible can be installed using the package manager. For example, on Ubuntu or Debian-based systems, run:
+
+[source, bash]
+----
+$ sudo apt update
+$ sudo apt install ansible
+----
+
+For Red Hat-based systems (e.g., CentOS, Fedora), use:
+
+[source, bash]
+----
+$ sudo yum install epel-release
+$ sudo yum install ansible
+----
+
+=== macOS
+
+On macOS, you can use Homebrew to install Ansible:
+
+[source, bash]
+----
+$ brew install ansible
+----
+
+=== Windows (with WSL)
+
+For Windows users, the Windows Subsystem for Linux (WSL) is a convenient option. Follow the Linux installation instructions above once WSL is set up.
+
+== Configuration
+
+After installation, Ansible's configuration file is located at `/etc/ansible/ansible.cfg` on Linux and macOS, and `%SystemDrive%\ProgramData\ansible` on Windows. The primary configuration file is `ansible.cfg`.
+
+=== Inventory File
+
+The inventory file is crucial for defining the hosts managed by Ansible. By default, Ansible looks for the inventory file at `/etc/ansible/hosts` on Linux and macOS, and `%SystemDrive%\ProgramData\ansible\inventory` on Windows.
+
+You can create a simple inventory file (`/etc/ansible/hosts` or `%SystemDrive%\ProgramData\ansible\inventory\hosts`) with the following content:
+
+[source, text]
+----
+[webservers]
+web1.example.com
+web2.example.com
+
+[dbservers]
+db1.example.com
+db2.example.com
+----</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="understand-the-fundamentals-of-ansible.html">Understand the fundamentals of Ansible</a></span>
+  <span class="next"><a href="master-ansible-playbooks-and-their-components.html">Master Ansible playbooks and their components</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
