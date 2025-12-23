@@ -1,22 +1,21 @@
-= An Example Quick Course
+=  Ansible Basics Course Outline
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+Course Title:  Ansible Basics Course Outline
 
 Description:
 Course description FIXME
 
 Duration: FIXME hours
 
-== Objectives
+== Topics covered in this course
 
-On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+*  Understand the fundamentals of Ansible
+
+
 
 == Prerequisites
 

@@ -1,0 +1,3 @@
+* xref:understand-the-fundamentals-of-ansible.adoc[]
+** xref:learn-to-install-and-configure-ansible.adoc[]
+** xref:master-ansible-playbooks-and-their-components.adoc[]

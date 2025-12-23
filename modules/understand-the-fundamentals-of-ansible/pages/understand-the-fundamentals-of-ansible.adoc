@@ -1,0 +1,13 @@
+#  Understand the fundamentals of Ansible
+
+**Understand the Fundamentals of Ansible**
+
+- **Introduction to Ansible**: Grasp the core concept of Ansible as a simple yet powerful automation tool, designed for configuration management, application deployment, and task automation.
+- **Ansible Architecture**: Learn about the architecture of Ansible, including its server (Ansible Tower or Ansible AWX for enhanced features) and client components (Ansible control node and managed nodes).
+- **Ansible Modules**: Understand the role of Ansible modules, which are the building blocks of Ansible, performing specific tasks on remote nodes.
+- **Inventory in Ansible**: Get acquainted with the concept of inventory, which is a list of hosts managed by Ansible, and how to organize them for efficient automation.
+- **Playbooks in Ansible**: Master the creation and usage of Ansible playbooks, which are files written in YAML that describe a policy for configuring a remote server.
+- **Ansible Roles**: Learn to structure playbooks using roles for reusability and readability, promoting a modular approach to automation.
+- **Ansible Variables, Templates, and Facts**: Understand how to use variables for dynamic data handling, templates for generating configuration files, and facts for gathering system information.
+
+This outline aims to provide a solid foundation in Ansible fundamentals, preparing learners to progress to more advanced topics like playbook creation and configuration management.

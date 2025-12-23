@@ -1,0 +1,68 @@
+#  Learn to install and configure Ansible
+
+```
+= Learn to Install and Configure Ansible
+
+== Prerequisites
+
+Before diving into the installation and configuration of Ansible, ensure you have the following prerequisites in place:
+
+1. A system running a supported operating system (e.g., Linux, macOS, or Windows with WSL).
+2. Basic understanding of command-line interfaces.
+3. A text editor for creating Ansible playbooks (e.g., vim, nano, or Visual Studio Code).
+
+== Installation
+
+Ansible can be installed on various platforms using different methods. Here, we'll cover the installation process for Linux, macOS, and Windows (using WSL).
+
+=== Linux
+
+For most Linux distributions, Ansible can be installed using the package manager. For example, on Ubuntu or Debian-based systems, run:
+
+[source, bash]
+----
+$ sudo apt update
+$ sudo apt install ansible
+----
+
+For Red Hat-based systems (e.g., CentOS, Fedora), use:
+
+[source, bash]
+----
+$ sudo yum install epel-release
+$ sudo yum install ansible
+----
+
+=== macOS
+
+On macOS, you can use Homebrew to install Ansible:
+
+[source, bash]
+----
+$ brew install ansible
+----
+
+=== Windows (with WSL)
+
+For Windows users, the Windows Subsystem for Linux (WSL) is a convenient option. Follow the Linux installation instructions above once WSL is set up.
+
+== Configuration
+
+After installation, Ansible's configuration file is located at `/etc/ansible/ansible.cfg` on Linux and macOS, and `%SystemDrive%\ProgramData\ansible` on Windows. The primary configuration file is `ansible.cfg`.
+
+=== Inventory File
+
+The inventory file is crucial for defining the hosts managed by Ansible. By default, Ansible looks for the inventory file at `/etc/ansible/hosts` on Linux and macOS, and `%SystemDrive%\ProgramData\ansible\inventory` on Windows.
+
+You can create a simple inventory file (`/etc/ansible/hosts` or `%SystemDrive%\ProgramData\ansible\inventory\hosts`) with the following content:
+
+[source, text]
+----
+[webservers]
+web1.example.com
+web2.example.com
+
+[dbservers]
+db1.example.com
+db2.example.com
+----
