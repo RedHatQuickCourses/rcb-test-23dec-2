@@ -1,0 +1,12 @@
+#  Hands-on Lab
+
+**Hands-on Lab**
+
+This section provides a practical, step-by-step guide to installing and configuring the components of RHEL Lightspeed. Participants will gain hands-on experience in deploying and managing RHEL Lightspeed, a tool designed to accelerate development by automating routine tasks, enhancing security, and streamlining compliance. The lab will cover:
+
+- Downloading and preparing the necessary installation media
+- Installing RHEL Lightspeed on a Red Hat Enterprise Linux (RHEL) system
+- Configuring RHEL Lightspeed policies to meet specific development needs
+- Verifying the successful installation and configuration of RHEL Lightspeed components
+
+By the end of this lab, learners will have a solid understanding of how to implement RHEL Lightspeed in their own environments, thereby accelerating their development processes.

@@ -1,0 +1,76 @@
+#  Installing and Configuring RHEL Lightspeed Components
+
+```
+== Installing and Configuring RHEL Lightspeed Components
+
+In this section, we will guide you through the process of installing and configuring the essential components of RHEL Lightspeed. RHEL Lightspeed is a subscription service that simplifies Red Hat Enterprise Linux (RHEL) management by automating critical tasks and providing policy-based management.
+
+### Prerequisites
+
+Before we begin, ensure that you have the following prerequisites in place:
+
+1. A valid RHEL subscription.
+2. A system running RHEL 8 or RHEL 9.
+3. A user with sudo privileges.
+
+### Step 1: Register the System
+
+First, register your system with Red Hat Subscription Manager (RHSM) using the following command:
+
+[source, bash]
+----
+sudo subscription-manager register --username <username> --password <password>
+----
+
+Replace `<username>` and `<password>` with your Red Hat account credentials.
+
+### Step 2: Attach the Subscription
+
+Next, attach your RHEL subscription to the system:
+
+[source, bash]
+----
+sudo subscription-manager attach --auto
+----
+
+### Step 3: Install RHEL Lightspeed Components
+
+Now, install the RHEL Lightspeed components using the following command:
+
+[source, bash]
+----
+sudo yum install redhat-insights-client insights-client
+----
+
+### Step 4: Configure RHEL Lightspeed
+
+After the installation, configure RHEL Lightspeed by editing the configuration file:
+
+[source, bash]
+----
+sudo vi /etc/insights-client/insights-client.conf
+----
+
+Make sure the following parameters are set correctly:
+
+- organization: Your organization ID
+- prefix: A unique prefix for your system
+- server_url: The URL of the RHEL Lightspeed server (defaults to https://insights.redhat.com)
+
+### Step 5: Start and Enable the Service
+
+Start and enable the RHEL Lightspeed service:
+
+[source, bash]
+----
+sudo systemctl start insights-client
+sudo systemctl enable insights-client
+----
+
+### Step 6: Verify the Installation
+
+Finally, verify that the RHEL Lightspeed components are installed and configured correctly by checking the status of the service:
+
+[source, bash]
+----
+sudo systemctl

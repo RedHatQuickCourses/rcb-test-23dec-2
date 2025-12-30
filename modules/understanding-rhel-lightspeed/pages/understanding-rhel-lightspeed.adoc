@@ -1,0 +1,9 @@
+#  Understanding RHEL Lightspeed
+
+- **Introduction to RHEL Lightspeed**
+
+    * RHEL Lightspeed is a management platform designed to streamline the deployment, lifecycle management, and security of Red Hat Enterprise Linux (RHEL) systems.
+    * It simplifies the process of managing RHEL at scale, enabling administrators to automate tasks, enforce policies, and maintain compliance across their infrastructure.
+    * RHEL Lightspeed integrates with Red Hat Insights for proactive identification and remediation of issues, and it supports various system roles to enforce consistent configurations.
+    * The platform is built on top of Red Hat Ansible Automation Platform, leveraging its capabilities for automation and orchestration.
+    * By using RHEL Lightspeed, organizations can accelerate their development cycles, reduce operational overhead, and improve overall system security and compliance.

@@ -1,9 +1,9 @@
-=  Ansible Basics Course Outline
+=  Accelerating Development with RHEL Lightspeed
 :navtitle: Home
 
 == Introduction
 
-Course Title:  Ansible Basics Course Outline
+Course Title:  Accelerating Development with RHEL Lightspeed
 
 Description:
 Course description FIXME
@@ -13,7 +13,9 @@ Duration: FIXME hours
 == Topics covered in this course
 
 
-*  Understand the fundamentals of Ansible
+*  Understanding RHEL Lightspeed
+
+*  Hands-on Lab
 
 
 

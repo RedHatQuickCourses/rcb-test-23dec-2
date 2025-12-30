@@ -1,11 +1,12 @@
 name: rcb-test-23dec-2
-title:  Ansible Basics Course Outline
+title:  Accelerating Development with RHEL Lightspeed
 version: 1.0.0
 nav:
 - modules/ROOT/nav.adoc
 - modules/LABENV/nav.adoc
 
-- modules/understand-the-fundamentals-of-ansible/nav.adoc
+- modules/understanding-rhel-lightspeed/nav.adoc
+
+- modules/hands-on-lab/nav.adoc
 
 - modules/appendix/nav.adoc
-

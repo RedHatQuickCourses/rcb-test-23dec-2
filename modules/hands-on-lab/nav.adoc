@@ -1,0 +1,2 @@
+* xref:hands-on-lab.adoc[]
+** xref:installing-and-configuring-rhel-lightspeed-components.adoc[]

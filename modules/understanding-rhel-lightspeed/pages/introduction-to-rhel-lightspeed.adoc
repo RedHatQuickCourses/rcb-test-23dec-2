@@ -1,0 +1,35 @@
+#  Introduction to RHEL Lightspeed
+
+```
+= Accelerating Development with RHEL Lightspeed
+
+== Understanding RHEL Lightspeed
+
+RHEL (Red Hat Enterprise Linux) Lightspeed is a comprehensive management platform designed to streamline and automate the deployment, configuration, and lifecycle management of Red Hat Enterprise Linux (RHEL) systems. It is built on top of Red Hat Insights and Red Hat Satellite, providing a unified interface for managing RHEL environments at scale.
+
+RHEL Lightspeed offers several key features:
+
+- **Policy-based Management**: Allows administrators to define and enforce policies across their RHEL systems, ensuring compliance and reducing the risk of misconfigurations.
+
+- **Content Management**: Simplifies the process of managing content, including software packages, errata, and modules, across RHEL systems.
+
+- **Automation**: Provides tools for automating repetitive tasks, such as system provisioning and updates, reducing manual effort and human error.
+
+- **Integration**: Seamlessly integrates with existing DevOps tools and workflows, enabling a smooth transition to a more automated and efficient management model.
+
+- **Insights-driven Actions**: Leverages Red Hat Insights data to proactively identify and remediate issues, enhancing system stability and security.
+
+RHEL Lightspeed is particularly beneficial for organizations that manage large RHEL deployments, as it helps to:
+
+- **Reduce operational overhead**: By automating routine tasks and providing a centralized management interface, RHEL Lightspeed frees up IT staff to focus on more strategic initiatives.
+
+- **Improve compliance**: Enforces consistent configurations and policies across all RHEL systems, simplifying compliance audits and reducing the risk of non-compliance penalties.
+
+- **Enhance security**: Proactively identifies and addresses potential security vulnerabilities, minimizing the attack surface and protecting against threats.
+
+- **Accelerate development cycles**: By providing a stable, secure, and easily manageable RHEL environment, RHEL Lightspeed enables development teams to focus on building and deploying applications without worrying about underlying infrastructure management.
+
+In the following hands-on lab, you will learn how to install and configure RHEL Lightspeed components, gaining practical experience in setting up and managing your own RHEL environment using this powerful platform.
+```
+
+This content provides a detailed introduction to RHEL Lightspeed, explaining its features, benefits,
